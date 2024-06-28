@@ -10,7 +10,7 @@ const taskClient = createTaskClient({ config: taskClientConfig });
 
 const autoTopUpTaskConfig = getAutoTopUpTaskConfig();
 const autoTopUpTaskHandler = new AutoTopUpTaskHandler({ config: autoTopUpTaskConfig });
-const AUTO_TOP_UP_TASK_NAME = `daily ${autoTopUpTaskName}`;
+const AUTO_TOP_UP_TASK_NAME = `daily ${autoTopUpTaskName} - ${autoTopUpTaskConfig.envConfig.LIT_NETWORK}`;
 
 async function gogo() {
   taskClient.start().then(async () => {
