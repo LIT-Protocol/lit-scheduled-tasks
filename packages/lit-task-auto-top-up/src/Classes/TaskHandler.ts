@@ -5,6 +5,7 @@ import date from 'date-and-time';
 import VError from 'verror';
 
 import { mintCapacityCreditNFT } from '../actions/mintCapacityCreditNFT';
+import { pruneExpiredCapacityTokenNFT } from '../actions/pruneExpiredCapacityTokenNFT';
 import { transferCapacityTokenNFT } from '../actions/transferCapacityTokenNFT';
 import { toErrorWithMessage } from '../errors';
 import { getLitContractsInstance } from '../singletons/getLitContracts';
@@ -40,6 +41,7 @@ export class TaskHandler {
     if (noUsableTokensTomorrow) {
       const capacityTokenIdStr = await mintCapacityCreditNFT({ recipientDetail });
       await transferCapacityTokenNFT({ capacityTokenIdStr, recipientAddress });
+      await pruneExpiredCapacityTokenNFT({ recipientDetail });
 
       return { capacityTokenIdStr, result: TaskResultEnum.minted, ...recipientDetail };
     }
