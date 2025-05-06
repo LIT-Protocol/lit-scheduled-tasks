@@ -34,7 +34,7 @@
   "dependencies": {
     "@date-fns/tz": "^1.1.2",
     "@hokify/agenda": "^6.3.0",
-    "@lit-protocol/contracts-sdk": "^6.4.0",
+    "@lit-protocol/contracts-sdk": "^6.6.0",
     "awaity": "^1.0.0",
     "bs58": "^5.0.0",
     "consola": "^3.2.3",
