@@ -70,7 +70,7 @@
     "requestsPerSecond": 10000
   },
   {
-    "recipientAddress": "0xD9D96fb150136798861363d8Ad9Fe4033cfC32b3",
+    "recipientAddress": "0x9C51ffDb115D21dA6F36ab945c59DA2D993dD6d8",
     "daysUntilExpires": 30,
     "requestsPerSecond": 10000
   }
