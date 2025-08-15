@@ -33,5 +33,10 @@
     "recipientAddress": "0xf5E6471851D517f1985D5c18D97141e6d4ed1eCF",
     "daysUntilExpires": 30,
     "requestsPerSecond": 10000
+  },
+  {
+    "recipientAddress": "0x742FA7A4cA011dCA57fB5555f4F93EE27cDBDBf2",
+    "daysUntilExpires": 30,
+    "requestsPerSecond": 10000
   }
 ]
